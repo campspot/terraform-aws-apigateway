@@ -167,9 +167,9 @@ variable "api_id" {
 
 variable "stage_name" {
   description = "The name of a specific deployment stage to expose at the given path."
-  type        = string
-  default     = null
-
+  type = string
+  default = null
+}
 ####
 # domain name
 variable "domain_name" {
