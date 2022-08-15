@@ -114,7 +114,7 @@ resource "aws_apigatewayv2_api_mapping" "this" {
   count = var.create && var.create_api_domain_name ? 1 : 0
 
   api_id      = var.api_id
-  domain_name = var.domain_name
+  domain_name = aws_apigatewayv2_domain_name.this[0].id
   stage       = var.stage_name
 }
 
