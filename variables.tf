@@ -159,6 +159,16 @@ variable "default_stage_tags" {
 
 #####
 # default stage API mapping
+variable "api_id" {
+  description = "The id of the API to connect"
+  type = string
+  default = null
+}
+
+variable "stage_name" {
+  description = "The name of a specific deployment stage to expose at the given path."
+  type        = string
+  default     = null
 
 ####
 # domain name
